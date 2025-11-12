@@ -2,10 +2,10 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "dev": "concurrently -c \"#93c5fd,#c4b5fd,#fb7185,#fdba74\" \"php artisan serve\" \"php artisan reverb:start\" \"php artisan queue:listen --tries=1\" \"php artisan pail --timeout=0\" \"npm run --prefix ../frontend dev\" --names=server,reverb,queue,logs,vite --kill-others"
+        "dev": "concurrently -c \"#93c5fd,#c4b5fd,#fb7185,#fdba74\" \"php artisan serve\" \"php artisan reverb:start\" \"php artisan queue:listen --tries=1\" \"php artisan pail --timeout=0\" \"npm run --prefix ../frontend dev\" --names=server,reverb,queue,logs,vite --kill-others",
+        "build": "npm run --prefix ../frontend build"
     },
     "devDependencies": {
-        "concurrently": "^8.2.2",
-        "vite": "^7.2.2"
+        "concurrently": "^8.2.2"
     }
 }
